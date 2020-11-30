@@ -16,9 +16,9 @@ object Versions {
 }
 
 object BuildPluginsVersion {
-    const val AGP = "4.1.0"
-    const val DETEKT = "1.14.2"
-    const val KOTLIN = "1.3.72"
+    const val AGP = "4.1.1"
+    const val DETEKT = "1.15.0-RC1"
+    const val KOTLIN = "1.4.20"
     const val KTLINT = "9.4.1"
     const val VERSIONS_PLUGIN = "0.33.0"
 }
@@ -38,4 +38,13 @@ object AndroidTestingLib {
     const val ANDROIDX_TEST_RUNNER = "androidx.test:runner:${Versions.ANDROIDX_TEST}"
     const val ANDROIDX_TEST_EXT_JUNIT = "androidx.test.ext:junit:${Versions.ANDROIDX_TEST_EXT}"
     const val ESPRESSO_CORE = "androidx.test.espresso:espresso-core:${Versions.ESPRESSO_CORE}"
+}
+
+object GradleExtraArgs {
+    const val lintersConfigFolder = "lintersConfigFolder"
+}
+
+object Plugins {
+    const val detektPlugin = "io.gitlab.arturbosch.detekt"
+    const val detektFormattingPlugin = "${detektPlugin}:detekt-formatting:${BuildPluginsVersion.DETEKT}"
 }
